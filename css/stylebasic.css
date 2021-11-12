@@ -1,0 +1,102 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  max-width: 1200px;
+  margin: auto;
+  padding: 1%;
+  box-sizing: border-box;
+}
+
+.flex-container{
+  display: flex;
+}
+.sm{
+  width: 20%;
+}
+.md{
+  width: 50%;
+}
+.lg{
+  width: 60%;
+}
+
+section{
+  width: 80%;
+}
+aside{
+  width: 20%;
+}
+
+
+main, header, div, p, figure, nav, h1, aside, footer, article, h2{
+  margin: 5px;
+  padding: 1rem;
+  border: 1px solid black;
+}
+
+main{
+  padding: 0.5rem;
+}
+header, main{
+  margin-bottom: 1em;
+}
+
+header{
+  background-color: darkcyan;
+}
+header figure, header nav{
+  background-color: cadetblue;
+}
+header h1{
+  background-color: cadetblue;
+}
+
+main{
+  background-color: slategrey;
+}
+main article{
+  background-color: blue;
+}
+main p{
+  background-color: lightblue;
+}
+aside{
+  background-color: darkred;
+}
+aside p, aside h2{
+  background-color: lightyellow;
+}
+
+footer{
+  background-color: darkgoldenrod;
+}
+
+
+@media screen and (max-width:850px){
+  main {
+    flex-wrap: wrap;
+  }
+  main aside, main section{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:600px){
+  #headernav{
+    flex-wrap: wrap;
+  }
+  #articulos div{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .articulosparte{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .sm, .lg, .md, main aside, main section, article{
+    width: 100%;
+  }
+
+}
